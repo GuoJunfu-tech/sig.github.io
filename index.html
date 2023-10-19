@@ -34,9 +34,15 @@
       mask-image: url(img/blob2.svg) !important;
     }
 
-    .photo-grid {
+    .photo-grid_4 {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px;
+    }
+
+    .photo-grid_3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
       grid-gap: 20px;
     }
 
@@ -67,299 +73,183 @@
   <link rel="stylesheet" href="./css/user-style.css">
 </head>
 
-<body>
+<title_body>
+  <header>
+    <title_title>
+      CSIG International Webinar on <span class="orange">SIGGRAPH Papers</span>
+  </header>
+  </title_title>
+  <div class="content">
+    <div class="introduction">
+      <p>
+        <title_text>
+          TO BE CHANGED! 3DGV is a virtual seminar series on Geometry Processing and 3D Computer Vision. Seminars
+          take
+          place every Wednesday, cycling through three different time zones (Europe, America, and Asia). We show seminar
+          hours in six different time zones in the following table. Please add this to your calendar to know hours in
+          your
+          time-zone.</title_text>
+      </p>
+    </div>
+  </div>
+</title_body>
 
-  <body>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="HTMLPAGE - 专业高效的在线HTML构建器|网页模板|网站模板|网页设计|网页开发|HTML生成工具|在线制作网页" />
-    <meta name="keywords"
-      content="网页设计,HTML在线构建器,HTMLPAGE,HTML5在线构建器,HTML在线编辑,拖拽网页生成,网页构建工具,网页制作,网页开发,在线制作网页,html编辑器,免费网页,制作网页,网页设计制作,响应式网页,交互设计,企业宣传册,企业网站,名片设计,响应式,在线做图,平面设计,思维导图,用户体验设计,网站设计,网站风格,网络拓扑图,网页设计,软件架构" />
-    <meta name="author" content="Lapus" />
-    <title>VIP会员单页面模板 - 企业网站</title>
-    <link rel="shortcut icon" href="https://htmlpage.cn/favicon.png" />
-    <link rel="stylesheet" href="css/plugins.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/pink.css" />
-    <nav id="sticky-navbar"
-      class="navbar navbar-expand-lg fancy navbar-light navbar-bg-light transparent navbar-clone fixed">
-      <div class="container">
-        <div
-          class="navbar-collapse-wrapper bg-white d-flex flex-row flex-nowrap w-100 justify-content-between align-items-center">
-          <div class="navbar-brand w-100"><a href="https://htmlpage.cn"></a>
-            <div class="htmlpage-row">
-              <div class="htmlpage-cell" id="i8oln2"><img src="img/csig.png" alt="" class="c6421" /></div>
-              <div class="htmlpage-cell" id="iek9pz">
-                <div id="ing2jv" class="c13392">CSIG SIGGRAPH International Online Paper Sharing Workshop</div>
-              </div>
-            </div>
-          </div>
-          <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
-            <div class="offcanvas-header d-lg-none">
-              <h3 class="text-white fs-30 mb-0">HTMLPAGE.CN</h3><button type="button" data-bs-dismiss="offcanvas"
-                aria-label="Close" class="btn-close btn-close-white"></button>
-            </div>
-            <div class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
-              <ul class="navbar-nav">
-                <li class="nav-item"></li>
-                <li class="nav-item dropdown">
-                  <ul class="dropdown-menu">
-                    <li class="dropdown dropdown-submenu dropend"><a href="#" data-bs-toggle="dropdown"
-                        class="dropdown-item dropdown-toggle">用户体验</a>
-                      <ul class="dropdown-menu">
-                        <li class="nav-item"><a href="./services.html" class="dropdown-item">交互体验设计</a></li>
-                        <li class="nav-item"><a href="./services2.html" class="dropdown-item">体验与用户行为</a></li>
-                      </ul>
-                    </li>
-                    <li class="dropdown dropdown-submenu dropend"><a href="#" data-bs-toggle="dropdown"
-                        class="dropdown-item dropdown-toggle">视觉设计</a>
-                      <ul class="dropdown-menu">
-                        <li class="nav-item"><a href="./about.html" class="dropdown-item">界面设计</a></li>
-                        <li class="nav-item"><a href="./about2.html" class="dropdown-item">平面设计</a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-item"><a href="./pricing.html" class="dropdown-item">架构设计</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <div class="dropdown-menu dropdown-lg">
-                    <div class="dropdown-lg-content">
-                      <div>
-                        <h6 class="dropdown-header">体验设计</h6>
-                        <ul class="list-unstyled">
-                          <li><a href="./projects.html" class="dropdown-item">某电商平台</a></li>
-                          <li><a href="./projects2.html" class="dropdown-item">某电商平台</a></li>
-                        </ul>
-                      </div><!-- /.column -->
-                      <div>
-                        <h6 class="dropdown-header">交互设计</h6>
-                        <ul class="list-unstyled">
-                          <li><a href="./single-project.html" class="dropdown-item">某游戏平台</a></li>
-                          <li><a href="./single-project2.html" class="dropdown-item">某游戏平台</a></li>
-                        </ul>
-                      </div><!-- /.column -->
-                    </div><!-- /auto-column -->
-                  </div>
-                </li>
-                <li class="nav-item dropdown">
-                  <ul class="dropdown-menu">
-                    <li class="nav-item"><a href="./blog.html" class="dropdown-item">企业介绍</a></li>
-                    <li class="nav-item"><a href="./blog2.html" class="dropdown-item">企业文化</a></li>
-                    <li class="dropdown dropdown-submenu dropend"><a href="#" data-bs-toggle="dropdown"
-                        class="dropdown-item dropdown-toggle">联系方式</a>
-                      <ul class="dropdown-menu">
-                        <li class="nav-item"><a href="./blog-post.html" class="dropdown-item">联系电话</a></li>
-                        <li class="nav-item"><a href="./blog-post2.html" class="dropdown-item">电子邮件</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ul><!-- /.navbar-nav -->
-              <div class="offcanvas-footer d-lg-none">
-                <div><a href="mailto:first.last@email.com" class="link-inverse">help@lapus.cn</a><br /> 00 (123) 456 78
-                  90 <br />
-                  <nav class="nav social social-white mt-4"><a href="#"><i class="uil uil-twitter"></i></a><a
-                      href="#"><i class="uil uil-facebook-f"></i></a><a href="#"><i class="uil uil-dribbble"></i></a><a
-                      href="#"><i class="uil uil-instagram"></i></a><a href="#"><i class="uil uil-youtube"></i></a>
-                  </nav><!-- /.social -->
-                </div>
-              </div><!-- /.offcanvas-footer -->
-            </div><!-- /.offcanvas-body -->
-          </div><!-- /.navbar-collapse -->
-          <!-- /.navbar-other -->
-        </div><!-- /.navbar-collapse-wrapper -->
-      </div><!-- /.container -->
-    </nav>
-    <div class="content-wrapper">
-      <header class="wrapper bg-gray">
-        <!-- /.navbar -->
-      </header><!-- /header -->
-      <section class="bg">
-        <div class="row gy-10 gy-md-13 gy-lg-0 align-items-center">
-          <div class="htmlpage-row">
-            <div class="htmlpage-cell"></div>
-            <div class="htmlpage-cell">
-              <div class="htmlpage-row">
-                <div class="htmlpage-cell">
-                  <div id="ig35b5" class="c32237"><span class="c32308">CSIG SIGGRAPH</span> <b>PaperWebinar</b></div>
-                </div>
-                <div class="htmlpage-cell"><img src="img/_a34d35f2-d45a-42f0-a51f-d785885028fd.jpg" class="c32003" />
-                </div>
-              </div>
-            </div>
-            <div class="htmlpage-cell"></div>
-          </div>
-          <div class="htmlpage-row"></div>
-          <!--/column -->
-          <!--/column -->
+<content_body>
+  <content_header>
+    <content_header_text>Section 1: THE TITLE </content_header_text>
+  </content_header>
+  <content_date>2021-05-01</content_date>
+  <div class="introduction">
+    <content_intro>
+      <p>
+        Abstract: This is an introductory paragraph for my simple website. It contains some information about the
+        website's purpose and content. This is an introductory paragraph for my simple website. It contains some
+        information
+        about the website's purpose and content.
+        <a
+          href="https://www.bilibili.com/video/BV13j41147u2/?share_source=copy_web&vd_source=661bcc3047f6030b7a9ce63eaf88d0e1">
+          Video</a> | <a href="https://games-cn.org/previouswebinar-ppt/">PDF</a>
+    </content_intro>
+    </p>
+  </div>
+  <content_link>
+  </content_link>
+  <div class="container">
+    <div class="photo-grid_3">
+      <div class="photo">
+        <div class="photo-container"><img src="img/organ-0.jpg" alt="Photo 1">
+          <a href="https://ustc-gcl-f.github.io/" class="photo-title">Host: Changhao Li</a>
         </div>
-        <div class="row gy-10 gy-md-13 gy-lg-0 align-items-center">
-          <div data-cues="slideInDown" data-group="header" class="col-md-8 col-lg-5 d-flex position-relative mx-auto">
-            <div class="img-mask mask-1"></div>
-            <div class="card shadow-lg position-absolute c9783">
-              <!--/.card-body -->
-            </div>
-            <!--/.card -->
-          </div>
-          <!--/column -->
-          <!--/column -->
-        </div><!-- /.container -->
-      </section>
-      <section class="bg">
-        <!-- /.container -->
-      </section>
-      <section class="bg">
-        <div class="htmlpage-row body1">
-          <div class="htmlpage-cell c22214">
-            <div class="htmlpage-row">
-              <div class="htmlpage-cell">
-                <div class="htmlpage-row">
-                  <div class="htmlpage-cell"></div>
-                  <div class="htmlpage-cell">
-                    <div data-cues="slideInDown" data-group="page-title" data-delay="600"
-                      class="col-lg-6 offset-lg-1 col-xxl-5 text-center text-lg-start"></div>
-                    <p class="lead fs-25 lh-sm mb-7 px-md-10 px-lg-0">CSIG SIGGRAPH 国际论文在线分享研讨会</p>
-                    <div class="c18477">TO BE CHANGED! 3DGV is a virtual seminar series on Geometry Processing and 3D
-                      Computer Vision. Seminars take place every Wednesday, cycling through three different time zones
-                      (Europe, America, and Asia). We show seminar hours in six different time zones in the following
-                      table. Please add this to your calendar to know hours in your time-zone.<br /></div>
-                  </div>
-                  <div class="htmlpage-cell"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div><!-- /.container -->
-      </section>
-      <link rel="stylesheet"
-        href="https://template-1253409072.cos.ap-guangzhou.myqcloud.com/bootstrap/css/bootstrap.min.css" />
-      <section class="wrapper">
-        <div class="container py-14 py-md-16">
-          <div class="htmlpage-row" id="i7l21b">
-            <div class="htmlpage-cell" id="ikftxq">
-              <div class="htmlpage-cell c55579">
-                <iframe width="672" height="378" src="https://www.youtube.com/embed/l5qr1jQ1M0E?si=DP2PmbioSiSJ0LNB"
-                  title="YouTube video player" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen></iframe>
-              </div>
-              <div class="htmlpage-cell">
-              </div>
-            </div>
-            <div class="htmlpage-cell">
-              <div class="htmlpage-row"></div><img src="img/speacher_0.jpg" class="c54889" />
-              <div class="htmlpage-row">
-                <div class="htmlpage-cell">
-                  <div id="i8890v" class="c55255">[Panelist]</div>
-                  <div class="c55255">Junfu Guo(USTC)</div>
-                  <div class="c55255">Changhao Li(USTC)</div>
-                </div>
-              </div>
-              <div class="htmlpage-row"></div>
-            </div>
-          </div>
-          <div class="htmlpage-row c55669">
-            <div class="htmlpage-cell c55579">
-              <iframe width="672" height="378" src="https://www.youtube.com/embed/NdoYSIqfWQw?si=MQpLQKnPfr7SSsnI"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-            </div>
-            <div class="htmlpage-cell">
-              <div class="htmlpage-row"></div><img src="img/speacher_0.jpg" class="c54889" />
-              <div class="htmlpage-row">
-                <div class="htmlpage-cell">
-                  <div class="c55255">[Panelist]</div>
-                  <div class="c55255">Junfu Guo(USTC)</div>
-                  <div class="c55255">Changhao Li(USTC)</div>
-                </div>
-              </div>
-              <div class="htmlpage-row"></div>
-            </div>
-          </div>
-          <!--/.row -->
+      </div>
+      <div class="photo">
+        <div class="photo-container"><img src="img/organ-2.png" alt="Photo 2">
+          <a href="https://ustc-gcl-f.github.io/" class="photo-title">Photo 8</a>
         </div>
-        <link rel="stylesheet"
-          href="https://template-1253409072.cos.ap-guangzhou.myqcloud.com/bootstrap/css/bootstrap.min.css" />
-        <!-- /.container -->
-      </section>
-      <section class="wrapper">
-        <link rel="stylesheet"
-          href="https://template-1253409072.cos.ap-guangzhou.myqcloud.com/bootstrap/css/bootstrap.min.css" />
-        <!-- /.container -->
-      </section>
-      <section data-block-type="features" data-id="7" draggable="true" class="fdb-block">
-        <div class="container">
-          <div class="row text-center">
-            <div class="col-12">
-              <h1>Organizers</h1>
-            </div>
-          </div>
-          <div class="photo-grid">
-            <div class="photo">
-              <div class="photo-container"><img src="img/organ-0.jpg" alt="Photo 1">
-                <a href="https://ustc-gcl-f.github.io/" class="photo-title">Photo 8</a>
-              </div>
-            </div>
-            <div class="photo">
-              <div class="photo-container"><img src="img/organ-2.png" alt="Photo 2">
-                <a href="https://ustc-gcl-f.github.io/" class="photo-title">Photo 8</a>
-              </div>
-            </div>
-            <div class="photo">
-              <div class="photo-container"> <img src="img/organ-3.jpeg" alt="Photo 3">
-                <a href="https://ustc-gcl-f.github.io/" class="photo-title">Photo 8</a>
-              </div>
-            </div>
-            <div class="photo">
-              <div class="photo-container">
-                <img src="img/organ-4.jpeg" alt="Photo 4">
-                <a href="https://ustc-gcl-f.github.io/" class="photo-title">Photo 8</a>
-              </div>
-            </div>
-            <div class="photo">
-              <div class="photo-container">
-                <img src="img/organ-0.jpg" alt="Photo 5">
-                <a href="https://ustc-gcl-f.github.io/" class="photo-title">Photo 8</a>
-              </div>
-            </div>
-            <div class="photo">
-              <div class="photo-container">
-                <img src="img/organ-2.png" alt="Photo 6">
-                <a href="https://ustc-gcl-f.github.io/" class="photo-title">Photo 7</a>
-              </div>
-            </div>
-            <div class="photo">
-              <div class="photo-container">
-                <img src="img/organ-3.jpeg" alt="Photo 7">
-                <a href="https://ustc-gcl-f.github.io/" class="photo-title">Photo 7</a>
-              </div>
-            </div>
-            <div class="photo">
-              <div class="photo-container">
-                <img src="img/organ-4.jpeg" alt="Photo 8">
-                <a href="https://ustc-gcl-f.github.io/" class="photo-title">Photo 8</a>
-              </div>
-            </div>
-          </div>
-      </section>
-      <section class="bg">
-        <!-- /.container -->
-      </section>
-      <section class="body">
-        <!-- /.container -->
-      </section><!-- /section -->
-      <!-- /section -->
-      <!-- /section -->
-    </div><!-- /.content-wrapper -->
-    <script src="js/plugins.js"></script>
-    <script src="js/theme.js"></script>
-    <link rel="stylesheet"
-      href="https://template-1253409072.cos.ap-guangzhou.myqcloud.com/vip-tpl/assets/css/plugins.css" />
-    <link rel="stylesheet"
-      href="https://template-1253409072.cos.ap-guangzhou.myqcloud.com/vip-tpl/assets/css/style.css" /><!-- /section -->
-    <script src="js/plugins.js"></script>
-    <script src="js/theme.js"></script>
-  </body>
+      </div>
+      <div class="photo">
+        <div class="photo-container"> <img src="img/organ-3.jpeg" alt="Photo 3">
+          <a href="https://ustc-gcl-f.github.io/" class="photo-title">Photo 8</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</content_body>
+
+<content_body>
+  <content_header>
+    <content_header_text>Section 2: THE TITLE </content_header_text>
+  </content_header>
+  <content_date>2023-05-01</content_date>
+  <div class="introduction">
+    <content_intro>
+      <p>
+        <content_header>
+          Abstract: This is an introductory paragraph for my simple website. It contains some information about the
+          website's purpose and content. This is an introductory paragraph for my simple website. It contains some
+          information
+          about the website's purpose and content.
+
+          <a
+            href="https://www.bilibili.com/video/BV13j41147u2/?share_source=copy_web&vd_source=661bcc3047f6030b7a9ce63eaf88d0e1">
+            Video</a> | <a href="https://games-cn.org/previouswebinar-ppt/">PDF</a>
+    </content_intro>
+    </p>
+    </content_header>
+  </div>
+
+  <div class="container">
+    <div class="photo-grid_3">
+      <div class="photo">
+        <div class="photo-container"><img src="img/organ-0.jpg" alt="Photo 1">
+          <a href="https://ustc-gcl-f.github.io/" class="photo-title">Host: Wukong</a>
+        </div>
+      </div>
+      <div class="photo">
+        <div class="photo-container"><img src="img/organ-2.png" alt="Photo 2">
+          <a href="https://ustc-gcl-f.github.io/" class="photo-title">Photo 8</a>
+        </div>
+      </div>
+      <div class="photo">
+        <div class="photo-container"> <img src="img/organ-3.jpeg" alt="Photo 3">
+          <a href="https://ustc-gcl-f.github.io/" class="photo-title">Photo 8</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</content_body>
+
+<section data-block-type="features" data-id="7" draggable="true" class="fdb-block">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-12">
+        <h1>Organizers</h1>
+      </div>
+    </div>
+    <div class="photo-grid_4">
+      <div class="photo">
+        <div class="photo-container"><img src="img/organ-0.jpg" alt="Photo 1">
+          <a href="https://ustc-gcl-f.github.io/" class="photo-title">Photo 8</a>
+        </div>
+      </div>
+      <div class="photo">
+        <div class="photo-container"><img src="img/organ-2.png" alt="Photo 2">
+          <a href="https://ustc-gcl-f.github.io/" class="photo-title">Photo 8</a>
+        </div>
+      </div>
+      <div class="photo">
+        <div class="photo-container"> <img src="img/organ-3.jpeg" alt="Photo 3">
+          <a href="https://ustc-gcl-f.github.io/" class="photo-title">Photo 8</a>
+        </div>
+      </div>
+      <div class="photo">
+        <div class="photo-container">
+          <img src="img/organ-4.jpeg" alt="Photo 4">
+          <a href="https://ustc-gcl-f.github.io/" class="photo-title">Photo 8</a>
+        </div>
+      </div>
+      <div class="photo">
+        <div class="photo-container">
+          <img src="img/organ-0.jpg" alt="Photo 5">
+          <a href="https://ustc-gcl-f.github.io/" class="photo-title">Photo 8</a>
+        </div>
+      </div>
+      <div class="photo">
+        <div class="photo-container">
+          <img src="img/organ-2.png" alt="Photo 6">
+          <a href="https://ustc-gcl-f.github.io/" class="photo-title">Photo 7</a>
+        </div>
+      </div>
+      <div class="photo">
+        <div class="photo-container">
+          <img src="img/organ-3.jpeg" alt="Photo 7">
+          <a href="https://ustc-gcl-f.github.io/" class="photo-title">Photo 7</a>
+        </div>
+      </div>
+      <div class="photo">
+        <div class="photo-container">
+          <img src="img/organ-4.jpeg" alt="Photo 8">
+          <a href="https://ustc-gcl-f.github.io/" class="photo-title">Photo 8</a>
+        </div>
+      </div>
+    </div>
+</section>
+<section class="head_bg">
+  <!-- /.container -->
+</section>
+<section class="body">
+  <!-- /.container -->
+</section><!-- /section -->
+<!-- /section -->
+<!-- /section -->
+</div><!-- /.content-wrapper -->
+<script src="js/plugins.js"></script>
+<script src="js/theme.js"></script>
+<link rel="stylesheet"
+  href="https://template-1253409072.cos.ap-guangzhou.myqcloud.com/vip-tpl/assets/css/plugins.css" />
+<link rel="stylesheet" href="https://template-1253409072.cos.ap-guangzhou.myqcloud.com/vip-tpl/assets/css/style.css" />
+<!-- /section -->
+<script src="js/plugins.js"></script>
+<script src="js/theme.js"></script>
+</body>
 </body>
 <html>
