@@ -2,37 +2,122 @@
 <html>
 
 <head>
-   <title>Bottom Border</title>
    <style>
-      body {
-         margin: 0;
-         padding: 0;
-         background-color: lightgray;
-         display: flex;
-         flex-direction: column;
-         justify-content: space-between;
-         height: 100vh;
+      /* CSS for the fixed title with black background */
+      header {
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         background-color: black;
+         color: white;
+         text-align: center;
+         padding: 20px;
       }
 
-      .border {
-         width: 60%;
-         border-bottom: 2px solid red;
-         /* You can change the border style, width, and color */
-         margin: auto;
+      /* CSS for the main content with orange background */
+      main {
+         background-color: orange;
          padding: 20px;
-         /* Add padding to separate content from the border */
+         margin-top: 0;
+         display: block;
+      }
+
+      /* Set a placeholder height for the header to prevent overlap */
+      body::before {
+         background-color: orange;
+         content: "";
+         display: block;
       }
    </style>
 </head>
 
 <body>
-   <div class="content">
-      <!-- Your content goes here -->
-      <p>This is your content above the bottom border.</p>
-   </div>
-   <div class="border">
-      <!-- The bottom border -->
-   </div>
+   <header>
+      <h1>Title with Black Background (Fixed)</h1>
+   </header>
+   <main>
+      <h2>first-Main Content with Orange Background</h2>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h2>Main Content with Orange Background</h2>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h2>Main Content with Orange Background</h2>
+      <br>
+      <br>
+      <br>
+      <h2>Main Content with Orange Background</h2>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h2>Main Content with Orange Background</h2>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h2>Main Content with Orange Background</h2>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h2>Main Content with Orange Background</h2>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h2>Main Content with Orange Background</h2>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h2>Main Content with Orange Background</h2>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h2>Main Content with Orange Background</h2>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h2>Main Content with Orange Background</h2>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h2>Main Content with Orange Background</h2>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h2>Main Content with Orange Background</h2>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h2>Main Content with Orange Background</h2>
+      <br>
+      <!-- Your main content goes here -->
+   </main>
+
+   <script>
+      // Get the header element and its height
+      const header = document.querySelector('header');
+      const headerHeight = header.offsetHeight;
+
+      // Set the margin-top of the main content to the header's height
+      const main = document.querySelector('main');
+      main.style.marginTop = headerHeight + 'px';
+   </script>
 </body>
 
 </html>
